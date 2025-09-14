@@ -1,0 +1,311 @@
+body{
+    background-color: #e3f2fd; /* light blue */
+    overflow: hidden;
+    background-image: url(bgwendy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Middlepart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 10cm;
+    width: 13cm;
+    border: 2px solid #64b5f6; /* blue accent */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(100, 181, 246, 0.7); /* blue shadow */
+    background-color: #f0f7ff; /* very light blue */
+    margin: auto;
+    font-family: 'Pacifico', cursive;
+    color: #1976d2; /* blue text */
+}
+
+.Middlepart h2 {
+    text-shadow: 2px 2px 4px rgba(100, 181, 246, 0.5);
+    letter-spacing: 1px;
+}
+.image-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.image-container img {
+    width: 50%;
+    height: auto;
+    max-height: 4cm;
+
+}
+
+.cake-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.bday_messege h1 {
+    font-family: 'Pacifico', cursive;
+    color: #1976d2;
+}
+.cake-container img {
+    width: 50%;
+    height: auto;
+    max-height: 4cm;
+
+}
+
+audio{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.bday_messege{
+    position: fixed;
+    top: 2.0cm;
+    left: 0.5cm;
+    border: 2px solid #64b5f6;
+    border-radius: 15px;
+    background-color: #f0f7ff;
+    max-width: 12cm;
+    max-height: 15cm; 
+    font-size: small;
+    overflow-y: scroll; 
+    box-shadow: 0 0 10px rgba(100, 181, 246, 0.5);
+    padding: 10px;
+}
+
+.bday_messege h1 {
+    font-family: 'Pacifico', cursive;
+    color: #1976d2;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(100, 181, 246, 0.5);
+}
+
+.bday_messege p{
+    margin-left: 3px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #64b5f6;
+}
+.tenor-gif-embed{
+    position: fixed;
+    top: 2cm;
+    left: 34%;
+    bottom: 3cm;
+    max-height: 5cm;
+    max-width: 13cm;
+    align-content: center;
+    background-color: white;
+}
+.birthday-image{
+    position: fixed;
+    top: 12cm;
+    left: 34%;
+    bottom: 5cm;
+    max-height: 5cm;
+    max-width: 5cm;
+    align-content: center;
+}
+.birthday-image img {
+    border: 2px solid #3e97f5;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(100, 181, 246, 0.5);
+}
+.together{
+    position: fixed;
+    top: 2cm;
+    left: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
+    border: 2px solid #64b5f6;
+    border-radius: 15px;
+    background-color: #f0f7ff;
+    padding: 10px;
+    max-height: 15cm;
+    overflow-y: auto;
+    max-width: 20cm; 
+    box-shadow: 0 0 10px rgba(100, 181, 246, 0.5);
+}
+
+.together img {
+    width: 100%;
+    height: 100%;
+    border: 2px solid #64b5f6;
+    border-radius: 10px;
+    max-width: 5cm;
+    max-height: 5cm;
+    transition: transform 0.3s ease;
+}
+
+.together img:hover {
+    transform: scale(1.05);
+}
+
+
+.hearts {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="%2364b5f6" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>') no-repeat;
+    opacity: 0.7;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+
+.ribbon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.ribbon-content {
+    position: absolute;
+    top: 30px;
+    right: -35px;
+    transform: rotate(45deg);
+    background: #64b5f6;
+    color: white;
+    padding: 7px 0;
+    width: 200px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .Middlepart {
+        width: 90%;
+        height: auto;
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    .Middlepart h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    audio {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Convert fixed positioning to a scrollable layout */
+    .bday_messege,
+    .tenor-gif-embed,
+    .birthday-image,
+    .together {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 90%;
+        max-width: none;
+        margin: 20px auto;
+    }
+
+    .bday_messege {
+        max-height: 300px;
+    }
+
+    .birthday-image img {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .together {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .together img {
+        max-width: 100%;
+        max-height: 150px;
+    }
+
+    .ribbon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .ribbon-content {
+        font-size: 12px;
+        width: 150px;
+        right: -30px;
+        top: 20px;
+    }
+}
+
+/* For smaller mobile phones */
+@media screen and (max-width: 480px) {
+    .Middlepart h2 {
+        font-size: 1.2rem;
+    }
+
+    .image-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .cake-container img {
+        width: 80%;
+    }
+
+    .together {
+        grid-template-columns: 1fr;
+    }
+
+    .bday_messege h1 {
+        font-size: 1.3rem;
+    }
+
+    .bday_messege p {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust heart animation for smaller screens */
+    .heart {
+        width: 15px;
+        height: 15px;
+    }
+}
